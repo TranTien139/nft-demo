@@ -1,0 +1,34 @@
+{
+  "name": "nft-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "truffle migrate --network bscTestnet --reset",
+    "compile": "truffle compile --network bscTestnet",
+    "merge": "node node_modules/truffle-flattener ./contracts/nft.sol > nft-merge.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranTien139/nft-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TranTien139/nft-demo/issues"
+  },
+  "homepage": "https://github.com/TranTien139/nft-demo#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "dotenv": "^16.0.1",
+    "truffle": "^5.4.9",
+    "truffle-flattener": "^1.5.0",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.5.14"
+  }
+}
