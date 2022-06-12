@@ -1,8 +1,8 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 require("dotenv");
 
-const PRIVATEKEY = '' // privete key
-const BSCSCANAPIKEY = '' // key verify
+const PRIVATEKEY = process.env.PRIVATEKEY // privete key
+const BSCSCANAPIKEY = process.env.BSCSCANAPIKEY // key verify
 
 module.exports = {
   plugins: [
